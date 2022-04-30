@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+
+
+.container {
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #da4760;
+  background-color: rgb(238, 238, 238);
+}
+
+body::after {
+  content: "";
+  background-image: url("images/cloud.png");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.card-white {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+  border: 1px solid #e07924;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline i {
+  font-size: 35px;
+  color: #e07924;
+}
+
+#amber {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px transparent #e07924;
+}
+
+h3 {
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+.button-pink {
+  color: #fc4848;
+  background-color: bisque;
+  padding: 5px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
